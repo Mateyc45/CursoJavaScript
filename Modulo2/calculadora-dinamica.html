@@ -20,10 +20,26 @@
                 sinal = prompt("Informe o sinal da sua operação")
             }
 
-            
+
             var numero2 = prompt("Informe o número final")
 
+            numero1 = parseInt(numero1);
+            numero2 = parseInt(numero2);
 
+            var resultadoFinal = 0
+
+            if(sinal == '+'){
+                resultadoFinal = numero1 + numero2;
+            }else if(sinal == '-'){
+                resultadoFinal = numero1 - numero2;
+            }else if(sinal == '/'){
+                resultadoFinal = numero1 / numero2;
+            }else if(sinal == '*'){
+                resultadoFinal = numero1 * numero2;
+            }
+
+
+            alert('O resultado é '+ resultadoFinal)
 
         </script>
     </body>
