@@ -1,0 +1,52 @@
+<html>
+    <body>
+        <script>
+
+            var pessoas = [{
+                'nome' : 'Matheus',
+                'idade' : 20, 
+                'profissao' : 'Programador'
+            },
+            {
+                'nome' : 'Beatriz',
+                'idade' : 20, 
+                'profissao' : 'Vendedora'
+            }
+            ];
+
+            var pizzas = [{
+                'nome':'Namorados',
+                'preco': 49.90,
+                'ingredientes':'Palmito, Mussarela e Molho de Tomate'
+            },
+            {
+                'nome':'Peperoni',
+                'preco':59.90,
+                'ingredientes':'Fatias de Peperoni, Mussarela e Molho de tomate'
+            }
+        ];
+
+        var opcao = 0;
+
+        do{
+            opcao = prompt("Digite a opcao");
+
+            if(opcao == 1){
+                for(let i = 0 ; i< pessoas.length; i++){
+                    console.log('O nome é '+ pessoas[i].nome);
+                    console.log('A idade é '+ pessoas[i].idade);
+                    console.log('A profissão é '+ pessoas[i].profissao)
+                }
+            }else if(opcao == 2){
+                for(let i = 0 ; i< pizzas.length; i++){
+                    console.log('O nome é '+ pizzas[i].nome);
+                    console.log('O preço é '+ pizzas[i].preco);
+                    console.log('Os ingredientes são '+ pizzas[i].ingredientes)
+                }
+            }
+        }while(opcao != 3);
+
+
+        </script>
+    </body>
+</html>
