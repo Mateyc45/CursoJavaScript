@@ -1,14 +1,10 @@
 <html>
     <body>
         <script>
-            var Pessoa = function(){
-                this.nome = "Matheus";
-                this.idade = 20;
-                this.profissao = "Programador";
-
-                this.printNome = function(nome){
-                    alert(nome);
-                }
+            var Pessoa = function(nome, idade, profissao){
+                this.nome = nome;
+                this.idade = idade;
+                this.profissao = profissao;
                 this.returnAnimal = function(animal){
                     return animal;
                 }
@@ -22,17 +18,25 @@
                     peso = "Peso desconhecido";
                 }
                 this.nome = nome;
-                this.raca = "York";
                 this.peso = peso;
             }
 
-            var pessoa = new Pessoa();
+            var nome = prompt("Qual seu nome?");
+            var idade = prompt("Qual é a sua idade?");
+            var profissao = prompt("Qual é a sua profissão?");
 
-            var animal = new Animal("Gato", "12kg");
+            var amor = new Pessoa(nome, idade, profissao);
 
-            animal.raca = "bulldog";
+            nome = prompt("Qual seu nome?");
+            idade = prompt("Qual é a sua idade?");
+            profissao = prompt("Qual é a sua profissão?");
 
-            alert(pessoa.returnAnimal(animal).raca);
+             var eu = new Pessoa(nome, idade, profissao);
+
+            console.log("O nome do meu bebê é "+ amor.nome + ", ela tem só "+ amor.idade+ " aninhos rs! Ela trabalha como "+ amor.profissao)
+            amor.idade = amor.idade.integer(
+            )
+            console.log(amor.idade);
 
         </script>
     </body>

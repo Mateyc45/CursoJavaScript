@@ -1,0 +1,28 @@
+<html>
+    <body>   
+        <script>
+            /*
+            Dia do mês
+            var date = new Date();
+            alert(date.getDate());
+            
+
+            var date = new Date();
+            // Dia da semana
+            //alert(date.getDay())
+
+            alert(date.getFullYear());
+            alert(date.getTime());
+            alert(date.getUTCDate());
+            alert(date.getHours());
+            */
+
+            var data = new Date('11/08/2020');
+            var data2 = new Date();
+
+            var diference = Math.trunc((data2.getTime()-data.getTime())/(1000*60*60*24));
+
+            alert(diference+' Dias.');
+        </script>
+    </body>
+</html>

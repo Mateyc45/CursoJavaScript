@@ -1,0 +1,34 @@
+<html>
+    <body>
+        
+        <script>
+
+            class Animal{
+                constructor(nome){ // toda vez que criamos uma classe podemos passar parametros
+                    //this.nome = 'cachorro';
+                    this.nome = nome;
+                }
+                printNome(){// isso não é chamado de função, é chamado de metodo
+                    return this.nome;
+                }
+            }
+
+            class Cachorro extends Animal{//extends faz a classe herdar tudo que tem na outra, ou seja Cachorro é filho de Animal
+                constructor(nome, raca){
+                    super(nome);
+                    this.raca = raca;
+                }
+                printRaca(){
+                    return this.raca;
+                }
+            }
+
+            cachorro = new Cachorro('Pit', 'Bull');
+
+            alert(cachorro.printNome() + cachorro.printRaca());
+
+
+        </script>
+
+    </body>
+</html>
