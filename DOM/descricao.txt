@@ -1,0 +1,14 @@
+DOM -> Document Object model  (Docucumento é outro nome para seu site)
+Através do javaScript podemos acessar o DOM e manipular os elementos
+Document = O propio Docucumento
+Node = Um nó de algum objeto (Ex: <div><p> </p></div>)
+Elementos = O elementos de forma individuais (divs, p, etc).
+
+Como manipular o DOM 
+
+Funções do própio JavaScript direto do navegador
+getElementById(), querySelector(), etc...
+
+DOM != JavaScript
+É importante dizer que o DOM é uma porfa de representar o documento e não se limita apenas
+ao javaScript.
